@@ -1,0 +1,58 @@
+:root {
+  --light-bg: white;
+  --light-primary: rgb(247, 249, 250);
+
+  --dark-bg: black;
+  --dark-primary: #15181c;
+
+  --gray-text: rgb(153, 153, 153);
+
+  font-size: 16px;
+}
+/* 
+* {
+  box-sizing: border-box;
+} */
+
+.light-theme {
+  --background-color: var(--light-bg);
+  --primary-bg: var(--light-primary);
+  color: black;
+}
+.dark-theme {
+  --background-color: var(--dark-bg);
+  --primary-bg: var(--dark-primary);
+  color: white;
+}
+
+body {
+  /* background-color: var(--background-color); */
+  background-color: var(--dark-bg);
+}
+
+.wrapper {
+  min-height: 100vh;
+  margin: auto;
+  text-align: center;
+}
+
+.profileCard {
+  background-color: var(--dark-primary);
+    border-radius: 8px;
+    height: 180px;
+    width: 350px;
+    position: relative;
+    overflow: hidden;
+    transition: height 0.2s ease;
+
+    /* */
+    display: inline-block;
+    margin: 8px;
+    vertical-align: top;
+}
+
+.banner {
+  display: block;
+  height: 70px;
+  width: 100%;
+}
